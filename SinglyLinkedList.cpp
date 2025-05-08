@@ -99,7 +99,7 @@ int main() {
     singlelinkedlist mhs;
     int nim;
     char ch;
-    
+
     while (1) {
         cout << endl << "MENU";
         cout << endl << "1. Menambah data kedalam list" << endl;
@@ -109,3 +109,10 @@ int main() {
         cout << "5. Keluar" << endl;
         cout << endl << "Masukan pilihan (1-5): ";
         cin >> ch;
+    
+        switch (ch) {
+            case '1': {
+                mhs.addnode();
+            }
+            break;
+    
