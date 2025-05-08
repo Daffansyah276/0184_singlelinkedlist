@@ -149,5 +149,18 @@ int main() {
                 }
             }
             break;
+            case '5': {
+                exit(0);
+            }
+            break;
     
+            default: {
+                cout << "Pilihan Salah!" << endl;
+            }
+            break;
+            }
+        }
+    
+    return 0;
+    }
     
