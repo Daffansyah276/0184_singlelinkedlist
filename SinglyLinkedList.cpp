@@ -27,4 +27,19 @@ void addnode()
     cout << "\nMasukkan Nomor Mahasiswa: ";
     cin >> nim;
 
-}
+    node *nodebaru = new node;
+    nodebaru->noMhs = nim;
+
+
+    if (START == NULL || nim <= START ->noMhs)
+    
+    {
+        if ((START != NULL) && (nim == START ->noMhs))
+        {
+            cout << "\nDuplikasi noMhs tidak diijinkan\n";
+            return;
+        }
+        nodebaru->next=START;
+        START = nodebaru;
+        return;
+    }
