@@ -2,20 +2,29 @@
 #include <string.h>
 using namespace std;
 
-class Node
+class node
 {
-public:
-    int noMhs;
-    Node *next;
+    public:
+        int
+         noMhs;
+         node *next;
 };
 
-class List 
+class singlelinkedlist
 {
-    Node *START;
+    node *START;
 
-    public:
-    List() {
-        START = NULL;
-    }
-        
+public:
+singlelinkedlist()
+{
+    START = NULL;
+
+}
+
+void addnode()
+{
+    int nim;
+    cout << "\nMasukkan Nomor Mahasiswa: ";
+    cin >> nim;
+
 }
